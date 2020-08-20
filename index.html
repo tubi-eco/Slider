@@ -1,0 +1,159 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <title>Hype Frontend Case 1 - Singleton</title>
+  <meta name="description" content="Sigleton">
+  <meta name="author" content="Sigleton">
+
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="logo">
+            <img src="images/logo.svg">
+        </div>
+
+        <div class="toggle-buttons" id="toggle-buttons-id">
+            <a class="toggle-button active" href="#" onclick="divVisibility('testimonial-content'); slider();">TESTIMONIALS</a>
+            <a class="toggle-button" href="#" onclick="divVisibility('feedbacks-content'); slider();">FEEDBACKS</a>
+        </div>
+
+        <div class="slider-container slideshow active" id="testimonial-content">
+            <div class="control">
+                <button class="previous">
+                    <img src="images/arrow.svg">
+                </button>
+                <button class="next">
+                    <img src="images/arrow.svg">
+                </button>
+            </div>
+            <ul class="slides">
+                <li class="slideActive">“Your affordability calculator saved me some serious time to focus on what I can actually buy.”</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius sem a sodales aliquam.</li>
+                <li>Praesent turpis nibh, venenatis at varius nec, sagittis quis tellus. Curabitur a eros vel ante.</li>
+            </ul>
+            <div class="slideThumbnail">
+                <ul>
+                    <li class="first active">
+                        <div class="photo">
+                            <img src="images/testimonial/1.svg">
+                        </div>
+                        <div class="details">
+                            <span class="name">William Ayrton</span>
+                            <span class="company">APPLE</span>
+                            <span class="social">
+                                <ul>
+                                    <li class="twitter"><a href="https://twitter.com/login?lang=tr" target="_blank"></a></li>
+                                    <li class="google"><a href="https://accounts.google.com/" target="_blank"></a></li>
+                                    <li class="dribbble"><a href="https://dribbble.com/" target="_blank"></a></li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="second">
+                        <div class="photo">
+                            <img src="images/testimonial/2.svg">
+                        </div>
+                        <div class="details">
+                            <span class="name">Jake Blare</span>
+                            <span class="company">GOOGLE</span>
+                            <span class="social">
+                                <ul>
+                                    <li class="dribbble"><a href="https://dribbble.com/" target="_blank"></a></li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="third">
+                        <div class="photo">
+                            <img src="images/testimonial/3.svg">
+                        </div>
+                        <div class="details">
+                            <span class="name">Isabella Cook</span>
+                            <span class="company">TESLA</span>
+                            <span class="social">
+                                <ul>
+                                    <li class="twitter"><a href="https://twitter.com/login?lang=tr" target="_blank"></a></li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>   
+        </div>
+
+        <div class="slider-container slideshow" id="feedbacks-content">
+            <div class="control">
+                <button class="previous">
+                    <img src="images/arrow.svg">
+                </button>
+                <button class="next">
+                    <img src="images/arrow.svg">
+                </button>
+            </div>
+            <ul class="slides">
+                <li class="slideActive">“Feedback 1 - Your affordability calculator saved me some serious time to focus on what I can actually buy.”</li>
+                <li>Feedback 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius sem a sodales aliquam.</li>
+                <li>Feedback 3 - Praesent turpis nibh, venenatis at varius nec, sagittis quis tellus. Curabitur a eros vel ante.</li>
+            </ul>
+            <div class="slideThumbnail">
+                <ul>
+                    <li class="first active">
+                        <div class="photo">
+                            <img src="images/testimonial/1.svg">
+                        </div>
+                        <div class="details">
+                            <span class="name">William Ayrton</span>
+                            <span class="company">APPLE</span>
+                            <span class="social">
+                                <ul>
+                                    <li class="twitter"><a href="https://twitter.com/login?lang=tr" target="_blank"></a></li>
+                                    <li class="google"><a href="https://accounts.google.com/" target="_blank"></a></li>
+                                    <li class="dribbble"><a href="https://dribbble.com/" target="_blank"></a></li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="second">
+                        <div class="photo">
+                            <img src="images/testimonial/2.svg">
+                        </div>
+                        <div class="details">
+                            <span class="name">Jake Blare</span>
+                            <span class="company">GOOGLE</span>
+                            <span class="social">
+                                <ul>
+                                    <li class="dribbble"><a href="https://dribbble.com/" target="_blank"></a></li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="third">
+                        <div class="photo">
+                            <img src="images/testimonial/3.svg">
+                        </div>
+                        <div class="details">
+                            <span class="name">Isabella Cook</span>
+                            <span class="company">TESLA</span>
+                            <span class="social">
+                                <ul>
+                                    <li class="twitter"><a href="https://twitter.com/login?lang=tr" target="_blank"></a></li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>   
+        </div>
+    </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

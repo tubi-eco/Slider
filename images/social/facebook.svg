@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="18px" viewBox="0 0 10 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Facebook</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Card-5" transform="translate(-696.000000, -648.000000)" fill="#FFFFFF">
+            <g id="Testimonials-" transform="translate(134.000000, 565.000000)">
+                <g id="Testimonial-2" transform="translate(402.000000, 3.000000)">
+                    <g id="Socials" transform="translate(118.000000, 80.000000)">
+                        <path d="M48.986,17.992 L44.988,17.992 L44.988,9.496 L42.99,9.496 L42.99,6.222 L44.988,6.222 L44.988,4.258 C44.988,1.589 46.116,-1.95399252e-14 49.321,-1.95399252e-14 L51.989,-1.95399252e-14 L51.989,3.274 L50.322,3.274 C49.074,3.274 48.991,3.731 48.991,4.585 L48.986,6.222 L52.008,6.222 L51.654,9.496 L48.986,9.496 L48.986,17.992 L48.986,17.992 Z" id="Facebook"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

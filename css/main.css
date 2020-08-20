@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap');
+html {
+    height: 100%;
+  }
+body{
+    position: relative;
+    margin:0;
+    padding:0;
+    width: 100%;
+    min-height:100%;
+    background: url(../images/bg.png) no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+.container{
+    width:90%;
+    margin: 0 auto;
+    position: relative;
+}
+.logo{
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+    padding-top: 40px;
+}
+/*Toggle Button Container Start*/
+.toggle-buttons{
+    margin: 70px auto;
+    display: table;
+    border: 2px solid #FFFFFF;
+    border-radius: 100px;
+    width: 40%;
+    height: 46px;
+    line-height: 46px;
+    
+    font-weight: 100;
+}
+.toggle-buttons a{
+    position: relative;
+    left:0;
+    display: table-cell;
+    font-size:14px;
+    color:#fff;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.toggle-buttons a.active{
+    background: #fff;
+    color:#4F5362;
+    pointer-events: none;
+}
+.toggle-buttons a:nth-child(1).active{
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.toggle-buttons a:nth-child(2).active{
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+/*Toggle Button Container End*/
+
+/*Sider Start*/
+#feedbacks-content{display: none}
+.slideshow{
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.control {
+	width: 100%;
+	height: 30px;
+	position: relative;
+	top:36px;
+	margin: 0;
+	z-index: 99;
+    display: block;
+}
+.control > button {
+    position: relative;
+	width: 40px;
+	opacity: 1;
+	color:#212121;
+    background-color: transparent;
+	border: 0;
+    cursor: pointer;
+    outline: none;
+}
+.previous{
+  float: left;
+}
+.next{
+  float: right;
+}
+.next img{
+    transform: rotateY(180deg);
+}
+.slides {
+	padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 250px;
+    width: 90%;
+}
+.slides > li {
+	position: absolute;
+	clear:both;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	opacity: 0;
+	overflow: hidden;
+	font-size: 52px;
+	text-align: center;
+    color:#fff;
+    
+    font-weight: 900;
+}
+.slides li.slideActive {
+	z-index: 2;
+	opacity: 1;
+	transition: 1s;
+}
+
+.slideThumbnail ul {
+	display: block;
+	width: 100%;
+  position: relative;
+  z-index: 999;
+  margin: 0;
+  padding:0;
+}
+.slideThumbnail ul li {
+display: inline-block;
+width:29%;
+ line-height: 36px;
+ text-align: center;
+ color: #f00;
+ text-decoration: none;
+ cursor:pointer;
+margin: 0 2%;
+background:rgba(34,35,40,0.7);
+border-radius: 5px;
+padding-bottom: 10px;
+transition: all 0.5s ease;
+}
+.slideThumbnail ul li.active{
+    opacity: 1;
+    background: #FFFFFF;
+    box-shadow: 0 29px 55px 0 rgba(0,0,0,0.69);
+    border-radius: 5px;
+}
+.slideThumbnail ul li .photo{
+    float: left;
+    width:70px;
+    height: 70px;
+    padding:20px 0 20px 20px;
+}
+.slideThumbnail ul li .photo img{
+    border-radius: 100%;
+
+}
+.slideThumbnail ul li .details{
+    float: left;
+    width: calc(100% - 90px);
+}
+.slideThumbnail ul li .details span{
+    
+    display: block;
+    text-align: left;
+    padding:20px 0 0 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.slideThumbnail ul li.active .details span{
+    color: #4F5362;
+}
+.slideThumbnail ul li .details span:nth-child(2){
+ padding:0 0 0 20px;
+}
+.slideThumbnail ul li .details .name{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.slideThumbnail ul li .details .company{
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.slideThumbnail ul li .details .social{
+    padding: 10px 0 10px 20px;
+    display: block;
+}
+
+.slideThumbnail ul li .details .social ul{
+    margin:0;
+}
+.slideThumbnail ul li .details .social ul li{
+    position: relative;
+    float: left;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    filter: brightness(3);
+    opacity: 1;
+    clear: inherit;
+}
+.slideThumbnail ul li .details .social ul li a{
+    display: block;
+    width:20px;
+    height: 20px;
+}
+.slideThumbnail ul li.active .details .social ul li{
+    filter: brightness(0);
+}
+.slideThumbnail ul li .details .social ul li.twitter{
+    background: url(../images/social/twitter.svg) no-repeat;
+}
+.slideThumbnail ul li .details .social ul li.facebook{
+    background: url(../images/social/facebook.svg) no-repeat;
+}
+.slideThumbnail ul li .details .social ul li.dribbble{
+    background: url(../images/social/dribbble.svg) no-repeat;
+}
+.slideThumbnail ul li .details .social ul li.google{
+    width:27px;
+    background: url(../images/social/google.svg) no-repeat;
+}
+/*Sider End*/
+
+/*Mobile*/
+@media(max-width:812px){
+    .slides > li {
+        font-size:26px;
+    }
+    .toggle-buttons {
+        margin: 40px auto 30px;
+    }
+    .slides{
+        min-height: 100px;
+    }
+    .slideThumbnail ul li{
+        width: 28%;
+    }
+    .slideThumbnail ul li .photo {
+        width: 50px;
+    }
+    .slideThumbnail ul li .photo img{
+        width:100%;
+    }
+    .slideThumbnail ul li .details {
+        float: left;
+        width: calc(100% - 70px);
+    }
+    .slideThumbnail ul li .details .name{
+        font-size:14px;
+    }
+}
+@media(max-width:768px){
+    body{
+        background-size: inherit;
+    }
+   
+    .previous{
+        left:-20px;
+      }
+      .next{
+       right:-20px;
+      }
+    .slides{
+        min-height: 170px;
+    }
+   
+    .toggle-buttons{
+        width:90%;
+    }
+
+    .slideThumbnail{
+        position: relative;
+        height: 150px;
+    }
+
+    .slideThumbnail ul li {
+        position: absolute;
+        clear:both;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 90%;
+        height: 105px;
+        margin: 0 auto;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .slideThumbnail ul li.active {
+        z-index: 2;
+        opacity: 1;
+        transition: 1s;
+    }
+
+}

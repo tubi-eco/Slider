@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="19px" viewBox="0 0 11 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Left</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Card-5" transform="translate(-98.000000, -364.000000)">
+            <g id="Text" transform="translate(97.000000, 281.000000)" fill="#FFFFFF">
+                <g id="Arrows" transform="translate(0.000000, 82.000000)">
+                    <path d="M11.532,3.536 L4.591,10.485 L11.532,17.433 C12.116,18.018 12.116,18.966 11.532,19.551 C10.947,20.136 10,20.136 9.416,19.551 L1.418,11.543 C0.834,10.959 0.834,10.01 1.418,9.426 L9.416,1.418 C10,0.833 10.947,0.833 11.532,1.418 C12.116,2.003 12.116,2.951 11.532,3.536 L11.532,3.536 Z" id="Left"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
